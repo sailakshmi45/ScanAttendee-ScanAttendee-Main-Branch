@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.globalnest.scanattendee",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "INSTANT_APP_MANIFEST"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 119,
+        "versionName": "2.8.9",
+        "outputFile": "scanAttendeeTablet-release.apk",
+        "fullName": "release",
+        "baseName": "release",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.globalnest.scanattendee",
+        "split": "",
+        "minSdkVersion": "16"
+      }
+    }
+  ]
+}

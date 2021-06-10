@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.globalnest.scanattendee"
+    android:targetSandboxVersion="2"
+    android:versionCode="119"
+    android:versionName="2.8.9" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="29" />
+
+    <!-- <uses-sdk tools:overrideLibrary="morxander.editcard,com.citrus.sdk.ui"/> -->
+
+
+    <!--
+        <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26"
+        tools:overrideLibrary="morxander.editcard,com.citrus.sdk.ui"/>
+    -->
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="false" />
+    <!--
+        <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+
+    <uses-permission
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="com.sonyericsson.extras.liveware.aef.EXTENSION_PERMISSION" />
+    <uses-permission android:name="com.sonyericsson.permission.CAMERA_EXTENDED" />
+    <uses-permission android:name="com.sonyericsson.permission.CONVERSATIONS_SETTINGS_PROVIDER" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <permission
+        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyScannerArrival"
+        android:protectionLevel="signature" >
+    </permission>
+    <permission
+        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.DecodedData"
+        android:protectionLevel="signature" >
+    </permission>
+    <permission
+        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyErrorMessage"
+        android:protectionLevel="signature" >
+    </permission>
+    <permission
+        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyScannerRemoval"
+        android:protectionLevel="signature" >
+    </permission>
+    <permission
+        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyDataArrival"
+        android:protectionLevel="signature" >
+    </permission>
+    <permission
+        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.GetBatteryLevelComplete"
+        android:protectionLevel="signature" >
+    </permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" >
+    </supports-screens>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+        android:usesCleartextTraffic="true" >
+//        tools:replace="android:icon,android:theme,android:allowBackup"
+        <activity
+            android:name="com.globalnest.scanattendee.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity android:name=".socketmobile.ScannerSettingsApplication" >
+        </activity>
+        -->
+        <!--
+        <activity
+            android:name=".AppLoginView"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        -->
+        <activity
+            android:name="com.globalnest.LoginActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.EventListActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.AddEventActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="org.achartengine.GraphicalActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.globalnest.scanattendee.DashboardActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.ManageTicketActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.HideandUnhideTicketsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.AddTicketActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.BadgeTemplateNewActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SalesTaxActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.DropboxActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.StripeAccountActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SAFeeActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.UserProfileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SalesOrderActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.AttendeeListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.AttendeePagerSampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.AttendeeExpandableActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.DashboardAttendeesList"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SelfCheckinAttendeeList"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.RefundHistoryActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.AttendeeDetailActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SelfCheckinAttendeeDetailActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.BarCodeScanActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <!--
+        <activity
+            android:name=".OrderSummaryActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        -->
+        <activity
+            android:name="com.globalnest.scanattendee.ExternalSettingsActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.ImportCSVActivity"
+            android:parentActivityName="com.globalnest.scanattendee.AttendeeListActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AttendeeListActivity" />
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.CollectOrderInfo"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.CollectOrderInfok"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SampleCSVActivity"
+            android:configChanges="orientation|keyboard"
+            android:parentActivityName="com.globalnest.scanattendee.AttendeeListActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AttendeeListActivity" />
+        </activity>
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!--
+            <activity
+            android:name="com.SocketMobile.ScanAPI.SoftScanActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        -->
+        <activity
+            android:name="io.card.payment.DataEntryActivity"
+            android:screenOrientation="portrait" />
+        <!-- <activity android:name="com.getcardflight.activities.ManualEntryActivity" /> -->
+        <!--
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+
+                &lt;!&ndash; Change this to be db- followed by your app key &ndash;&gt;
+                <data android:scheme="db-g131nz3n5k0imd1" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="com.globalnest.scanattendee.TicketCartActivity"
+            android:label="@string/title_activity_ticket_cart"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!--
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name="com.globalnest.scanattendee.ScannerPairActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.paypal.android.MEP.PayPalActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.GlobalScanActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_global_scan"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.PGatewayKeyList"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.PaymentSetting"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_payment_setting"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.CheckinHistory"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_payment_setting"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.payments.TrustCommerceWebView"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensorPortrait" />
+        <!-- For Authorize.net required permissions -->
+        <!-- ** Security Activities - REQUIRED ** -->
+        <!--
+            <activity
+            android:name="net.authorize.android.security.MobileMerchantAuthActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensorPortrait" />
+        -->
+        <!--
+            <activity
+            android:name="net.authorize.android.security.LoginBaseActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensorPortrait" />
+        -->
+        <!-- AIM Activity -->
+        <!--
+            <activity
+            android:name="net.authorize.android.aim.AuthCaptureActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        -->
+        <!--
+        <activity
+            android:name="net.authorize.AuthorizeNetActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        -->
+        <activity
+            android:name="com.globalnest.scanattendee.SocialMedia"
+            android:label="@string/app_name"
+            android:theme="@style/MyCustomTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.globalnest.social.GlobalFacebookActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.globalnest.social.LinkedInActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.globalnest.social.TwitterActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.globalnest.social.TwitterWebViewActivity"
+            android:label="@string/app_name" />
+        <activity android:name="com.globalnest.cropimage.CropImage" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.globalnest.scanattendee.BuyerLevelAttendeeList"
+            android:label="@string/title_activity_buyer_level_attendee_list"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.PrintAttendeesListActivity"
+            android:label="@string/title_activity_buyer_level_attendee_list"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.UniqueAttendeesListActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.MergeLevelAttendeesListActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.Registrationclass"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.OrderDetailActivity"
+            android:label="@string/title_activity_order_detail"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.EventAdminCreditCard"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.LoadingEventDetailsActivity"
+            android:label="@string/title_activity_loading_event_details"
+            android:theme="@style/MyCustomTheme" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SellOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SelfcheckinPaymentActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SearchAttendeeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.ScannedTicketSettings"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SessionListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.TransperantGlobalScanActivity"
+            android:theme="@style/MyTresperant" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.OrderSucessPrintActivity"
+            android:theme="@style/MyTresperant" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.OfflineDataSyncActivty"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.AlertDialogActivity"
+            android:theme="@style/MyTresperant" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.AddAttendeeActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SelfcheckinTicketslistActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SelfcheckinCollectOrderInfo"
+            android:configChanges="keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.OfflineScanActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.OfflineSyncDialogActivity"
+            android:label=""
+            android:theme="@style/MyCustomTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.SessionAttendeeDetailActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.globalnest.scanattendee.FilePicker"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- For Paytm -->
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <!-- citrus -->
+        <activity
+            android:name="com.globalnest.scanattendee.PrintersListActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.globalnest.printer.PrintDialogActivity"
+            android:screenOrientation="portrait" />
+        <!--
+            <activity
+            android:name="com.globalnest.scanattendee.citrus.MainActivity"
+            android:screenOrientation="portrait" />
+        -->
+        <!--
+       <activity
+           android:name=".DashboardActivity"
+           android:label="@string/app_name"
+           android:screenOrientation="sensorPortrait" >
+       </activity>
+        -->
+        <!-- Background Service -->
+
+        <service
+            android:name="com.globalnest.BackgroundReciver.DownloadService"
+            android:exported="false" />
+        <service
+            android:name="com.globalnest.appsessions.RevokeSessionsService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.globalnest.scanattendee.SocketBroadCastReciever"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyScannerArrival" />
+                <action android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.DecodedData" />
+                <action android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyErrorMessage" />
+                <action android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyScannerRemoval" />
+                <action android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyDataArrival" />
+                <action android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.GetBatteryLevelComplete" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+
+                <category android:name="com.globalnest.scanattendee" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.globalnest.scanattendee.OfflineSyncBroadCast" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d8676b8c53ed81722aa7504617f5ffe2048127a9" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!--
+        <meta-data
+            android:name="com.socketmobile.capture.APP_KEY"
+            android:value="MC0CFQCOFDCSAL8t/nx7Zg8370fQOd+lEgIUPiSWKeKG1Q9MdEEnUvSwv+6LeHE="/>
+        <meta-data
+            android:name="com.socketmobile.capture.DEVELOPER_ID"
+            android:value="a437d36b-11bf-4027-91de-aea4e274412c"/>
+        -->
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+            android:authorities="com.globalnest.scanattendee.crashlyticsinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\ScanAttendee-ScanAttendee-Main-Branch\\ScanAttendee-ScanAttendee-Main-Branch\\scanAttendeeTablet\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+            "map": [
+                {
+                    "source": "D:\\ScanAttendee-ScanAttendee-Main-Branch\\ScanAttendee-ScanAttendee-Main-Branch\\scanAttendeeTablet\\src\\main\\res\\values-v14\\ptr_default_style.xml",
+                    "from": {
+                        "startLines": "15,8,2,49,23,39,31",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "555,275,55,2151,923,1674,1319",
+                        "endLines": "21,13,6,55,29,47,37",
+                        "endColumns": "12,12,12,12,12,12,12",
+                        "endOffsets": "913,545,265,2521,1313,2141,1668"
+                    },
+                    "to": {
+                        "startLines": "5,12,18,23,30,37,46",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "192,555,830,1045,1420,1815,2287",
+                        "endLines": "11,17,22,29,36,45,52",
+                        "endColumns": "12,12,12,12,12,12,12",
+                        "endOffsets": "550,825,1040,1415,1810,2282,2636"
+                    }
+                },
+                {
+                    "source": "D:\\ScanAttendee-ScanAttendee-Main-Branch\\ScanAttendee-ScanAttendee-Main-Branch\\scanAttendeeTablet\\src\\main\\res\\values-v14\\styles.xml",
+                    "from": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "220",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "352"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "187"
+                    }
+                }
+            ]
+        }
+    ]
+}

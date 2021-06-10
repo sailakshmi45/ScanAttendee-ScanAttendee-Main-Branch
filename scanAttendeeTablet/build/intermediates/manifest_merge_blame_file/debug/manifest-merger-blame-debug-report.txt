@@ -1,0 +1,1188 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.globalnest.scanattendee"
+4    android:versionCode="119"
+5    android:versionName="2.8.9" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml
+10
+11    <!-- <uses-sdk tools:overrideLibrary="morxander.editcard,com.citrus.sdk.ui"/> -->
+12
+13
+14    <!--
+15        <uses-sdk
+16        android:minSdkVersion="15"
+17        android:targetSdkVersion="26"
+18        tools:overrideLibrary="morxander.editcard,com.citrus.sdk.ui"/>
+19    -->
+20
+21    <uses-feature
+21-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:15:5-17:36
+22        android:glEsVersion="0x00020000"
+22-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:16:9-41
+23        android:required="false" />
+23-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:17:9-33
+24    <!--
+25        <uses-feature
+26        android:name="android.hardware.telephony"
+27        android:required="false" />
+28    -->
+29    <uses-feature
+29-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:21:5-23:36
+30        android:name="android.hardware.camera"
+30-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:22:9-47
+31        android:required="false" />
+31-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:23:9-33
+32    <uses-feature
+32-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:24:5-26:36
+33        android:name="android.hardware.camera.autofocus"
+33-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:25:9-57
+34        android:required="false" />
+34-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:26:9-33
+35    <uses-feature
+35-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:27:5-29:36
+36        android:name="android.hardware.touchscreen"
+36-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:28:9-52
+37        android:required="false" />
+37-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:29:9-33
+38    <uses-feature
+38-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:30:5-32:36
+39        android:name="android.hardware.wifi"
+39-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:31:9-45
+40        android:required="false" />
+40-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:32:9-33
+41    <uses-feature
+41-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:33:5-35:36
+42        android:name="android.hardware.bluetooth"
+42-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:34:9-50
+43        android:required="false" />
+43-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:35:9-33
+44    <uses-feature
+44-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:36:5-38:36
+45        android:name="android.hardware.location.network"
+45-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:37:9-57
+46        android:required="false" />
+46-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:38:9-33
+47
+48    <uses-permission
+48-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:40:5-43:23
+49        xmlns:android="http://schemas.android.com/apk/res/android"
+49-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:41:9-67
+50        android:name="android.permission.INTERNET" >
+50-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:42:9-51
+51    </uses-permission>
+52    <uses-permission android:name="android.permission.CAMERA" />
+52-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:44:5-65
+52-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:44:22-62
+53    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+53-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:45:5-79
+53-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:45:22-76
+54    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+54-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:46:5-81
+54-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:46:22-78
+55    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+55-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:47:5-80
+55-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:47:22-77
+56    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+56-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:48:5-79
+56-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:48:22-76
+57    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+57-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:49:5-76
+57-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:49:22-73
+58    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+58-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:50:5-76
+58-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:50:22-73
+59    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+60    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+60-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:52:5-74
+60-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:52:22-71
+61    <uses-permission android:name="android.permission.BLUETOOTH" />
+61-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:53:5-68
+61-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:53:22-65
+62    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS" />
+62-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:54:5-76
+62-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:54:22-73
+63    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+63-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:55:5-79
+63-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:55:22-76
+64    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+64-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:56:5-80
+64-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:56:22-78
+65    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+65-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:57:5-85
+65-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:57:22-82
+66    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+66-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:58:5-84
+66-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:58:22-81
+67    <uses-permission android:name="com.sonyericsson.extras.liveware.aef.EXTENSION_PERMISSION" />
+67-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:59:5-97
+67-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:59:22-94
+68    <uses-permission android:name="com.sonyericsson.permission.CAMERA_EXTENDED" />
+68-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:60:5-83
+68-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:60:22-80
+69    <uses-permission android:name="com.sonyericsson.permission.CONVERSATIONS_SETTINGS_PROVIDER" />
+69-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:61:5-99
+69-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:61:22-96
+70    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+70-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:62:5-79
+70-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:62:22-77
+71    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+71-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:63:5-70
+71-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:63:22-68
+72
+73    <permission
+73-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:65:5-68:18
+74        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyScannerArrival"
+74-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:66:9-112
+75        android:protectionLevel="signature" >
+75-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:67:9-44
+76    </permission>
+77    <permission
+77-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:69:5-72:18
+78        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.DecodedData"
+78-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:70:9-103
+79        android:protectionLevel="signature" >
+79-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:71:9-44
+80    </permission>
+81    <permission
+81-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:73:5-76:18
+82        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyErrorMessage"
+82-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:74:9-110
+83        android:protectionLevel="signature" >
+83-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:75:9-44
+84    </permission>
+85    <permission
+85-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:77:5-80:18
+86        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyScannerRemoval"
+86-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:78:9-112
+87        android:protectionLevel="signature" >
+87-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:79:9-44
+88    </permission>
+89    <permission
+89-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:81:5-84:18
+90        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyDataArrival"
+90-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:82:9-109
+91        android:protectionLevel="signature" >
+91-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:83:9-44
+92    </permission>
+93    <permission
+93-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:86:5-89:18
+94        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.GetBatteryLevelComplete"
+94-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:87:9-115
+95        android:protectionLevel="signature" >
+95-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:88:9-44
+96    </permission>
+97
+98    <supports-screens
+98-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:93:5-100:24
+99        android:anyDensity="true"
+99-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:94:9-34
+100        android:largeScreens="true"
+100-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:95:9-36
+101        android:normalScreens="true"
+101-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:96:9-37
+102        android:resizeable="true"
+102-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:97:9-34
+103        android:smallScreens="true"
+103-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:98:9-36
+104        android:xlargeScreens="true" >
+104-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:99:9-37
+105    </supports-screens>
+106
+107    <uses-permission android:name="android.permission.VIBRATE" />
+107-->[io.card:android-sdk:5.5.1] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\1fc0823bf49ad0fb83dfd2f39a600528\android-sdk-5.5.1\AndroidManifest.xml:10:5-66
+107-->[io.card:android-sdk:5.5.1] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\1fc0823bf49ad0fb83dfd2f39a600528\android-sdk-5.5.1\AndroidManifest.xml:10:22-63
+108
+109    <application
+109-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:102:5-649:19
+110        android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication"
+110-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:103:9-64
+111        android:allowBackup="true"
+111-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:104:9-35
+112        android:debuggable="true"
+113        android:hardwareAccelerated="false"
+113-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:108:9-44
+114        android:icon="@drawable/app_icon"
+114-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:105:9-42
+115        android:label="@string/app_name"
+115-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:106:9-41
+116        android:largeHeap="true"
+116-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:107:9-33
+117        android:requestLegacyExternalStorage="true"
+117-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:111:9-52
+118        android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+118-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:109:9-68
+119        android:usesCleartextTraffic="true" >
+119-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:110:9-44
+120//        tools:replace="android:icon,android:theme,android:allowBackup"
+121        <activity
+121-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:112:9-122:20
+122            android:name="com.globalnest.scanattendee.SplashActivity"
+122-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:113:13-43
+123            android:label="@string/app_name"
+123-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:114:13-45
+124            android:screenOrientation="sensorPortrait"
+124-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:115:13-55
+125            android:windowSoftInputMode="stateHidden" >
+125-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:116:13-54
+126            <intent-filter>
+126-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:117:13-121:29
+127                <action android:name="android.intent.action.MAIN" />
+127-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:118:17-69
+127-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:118:25-66
+128
+129                <category android:name="android.intent.category.LAUNCHER" />
+129-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:120:17-77
+129-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:120:27-74
+130            </intent-filter>
+131        </activity>
+132        <!--
+133        <activity android:name=".socketmobile.ScannerSettingsApplication" >
+134        </activity>
+135        -->
+136        <!--
+137        <activity
+138            android:name=".AppLoginView"
+139            android:configChanges="keyboardHidden|screenSize"
+140            android:screenOrientation="sensorPortrait" >
+141        </activity>
+142        -->
+143        <activity
+143-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:130:9-134:20
+144            android:name="com.globalnest.LoginActivity"
+144-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:131:13-56
+145            android:configChanges="keyboardHidden|screenSize"
+145-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:132:13-62
+146            android:screenOrientation="sensorPortrait" >
+146-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:133:13-55
+147        </activity>
+148        <activity
+148-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:135:9-140:20
+149            android:name="com.globalnest.scanattendee.EventListActivity"
+149-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:136:13-46
+150            android:configChanges="keyboardHidden|screenSize"
+150-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:137:13-62
+151            android:screenOrientation="sensorPortrait"
+151-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:138:13-55
+152            android:windowSoftInputMode="stateHidden" >
+152-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:139:13-54
+153        </activity>
+154        <activity
+154-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:141:9-146:20
+155            android:name="com.globalnest.scanattendee.AddEventActivity"
+155-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:142:13-45
+156            android:configChanges="orientation|keyboardHidden|screenSize"
+156-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:143:13-74
+157            android:screenOrientation="sensorPortrait"
+157-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:144:13-55
+158            android:windowSoftInputMode="stateHidden|adjustResize" >
+158-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:145:13-67
+159        </activity>
+160        <activity
+160-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:147:9-149:58
+161            android:name="org.achartengine.GraphicalActivity"
+161-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:148:13-62
+162            android:screenOrientation="sensorPortrait" />
+162-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:149:13-55
+163        <activity
+163-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:150:9-157:20
+164            android:name="com.globalnest.scanattendee.DashboardActivity"
+164-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:151:13-46
+165            android:configChanges="orientation|screenSize|keyboardHidden"
+165-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:152:13-74
+166            android:screenOrientation="sensorPortrait"
+166-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:153:13-55
+167            android:windowSoftInputMode="stateHidden|adjustPan|stateAlwaysHidden" >
+167-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:154:13-82
+168        </activity>
+169        <activity
+169-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:158:9-163:20
+170            android:name="com.globalnest.scanattendee.ManageTicketActivity"
+170-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:159:13-49
+171            android:configChanges="keyboardHidden|orientation|screenSize"
+171-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:160:13-74
+172            android:screenOrientation="sensorPortrait"
+172-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:161:13-55
+173            android:windowSoftInputMode="stateHidden|adjustPan" >
+173-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:162:13-64
+174        </activity>
+175        <activity
+175-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:164:9-169:20
+176            android:name="com.globalnest.scanattendee.HideandUnhideTicketsActivity"
+176-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:165:13-57
+177            android:configChanges="keyboardHidden|orientation|screenSize"
+177-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:166:13-74
+178            android:screenOrientation="sensorPortrait"
+178-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:167:13-55
+179            android:windowSoftInputMode="stateHidden|adjustPan" >
+179-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:168:13-64
+180        </activity>
+181        <activity
+181-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:170:9-174:20
+182            android:name="com.globalnest.scanattendee.AddTicketActivity"
+182-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:171:13-46
+183            android:configChanges="orientation|screenSize"
+183-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:172:13-59
+184            android:windowSoftInputMode="stateHidden|adjustPan" >
+184-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:173:13-64
+185        </activity>
+186        <activity
+186-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:176:9-181:20
+187            android:name="com.globalnest.scanattendee.BadgeTemplateNewActivity"
+187-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:177:13-53
+188            android:configChanges="orientation|screenSize"
+188-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:178:13-59
+189            android:screenOrientation="sensorPortrait"
+189-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:179:13-55
+190            android:windowSoftInputMode="stateHidden|adjustPan" >
+190-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:180:13-64
+191        </activity>
+192        <activity
+192-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:182:9-187:20
+193            android:name="com.globalnest.scanattendee.SalesTaxActivity"
+193-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:183:13-45
+194            android:configChanges="orientation|screenSize"
+194-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:184:13-59
+195            android:screenOrientation="sensorPortrait"
+195-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:185:13-55
+196            android:windowSoftInputMode="stateHidden|adjustPan" >
+196-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:186:13-64
+197        </activity>
+198        <activity
+198-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:188:9-193:20
+199            android:name="com.globalnest.scanattendee.DropboxActivity"
+199-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:189:13-44
+200            android:configChanges="orientation|screenSize"
+200-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:190:13-59
+201            android:screenOrientation="sensorPortrait"
+201-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:191:13-55
+202            android:windowSoftInputMode="stateHidden|adjustPan" >
+202-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:192:13-64
+203        </activity>
+204        <activity
+204-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:194:9-199:20
+205            android:name="com.globalnest.scanattendee.StripeAccountActivity"
+205-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:195:13-50
+206            android:configChanges="orientation|screenSize"
+206-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:196:13-59
+207            android:screenOrientation="sensorPortrait"
+207-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:197:13-55
+208            android:windowSoftInputMode="stateHidden|adjustPan" >
+208-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:198:13-64
+209        </activity>
+210        <activity
+210-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:200:9-205:20
+211            android:name="com.globalnest.scanattendee.SAFeeActivity"
+211-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:201:13-42
+212            android:configChanges="orientation|screenSize"
+212-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:202:13-59
+213            android:screenOrientation="sensorPortrait"
+213-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:203:13-55
+214            android:windowSoftInputMode="stateHidden|adjustPan" >
+214-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:204:13-64
+215        </activity>
+216        <activity
+216-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:206:9-211:20
+217            android:name="com.globalnest.scanattendee.UserProfileActivity"
+217-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:207:13-48
+218            android:configChanges="keyboardHidden|orientation|screenSize"
+218-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:208:13-74
+219            android:screenOrientation="sensorPortrait"
+219-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:209:13-55
+220            android:windowSoftInputMode="stateHidden|adjustPan" >
+220-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:210:13-64
+221        </activity>
+222        <activity
+222-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:212:9-217:20
+223            android:name="com.globalnest.scanattendee.SalesOrderActivity"
+223-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:213:13-47
+224            android:configChanges="keyboardHidden|orientation|screenSize"
+224-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:214:13-74
+225            android:screenOrientation="sensorPortrait"
+225-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:215:13-55
+226            android:windowSoftInputMode="stateHidden|adjustPan" >
+226-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:216:13-64
+227        </activity>
+228        <activity
+228-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:218:9-222:20
+229            android:name="com.globalnest.scanattendee.AttendeeListActivity"
+229-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:219:13-49
+230            android:configChanges="keyboardHidden|orientation|screenSize"
+230-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:221:13-74
+231            android:screenOrientation="sensorPortrait" >
+231-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:220:13-55
+232        </activity>
+233        <activity
+233-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:223:9-227:20
+234            android:name="com.globalnest.scanattendee.AttendeePagerSampleActivity"
+234-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:224:13-56
+235            android:configChanges="keyboardHidden|orientation|screenSize"
+235-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:226:13-74
+236            android:screenOrientation="sensorPortrait" >
+236-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:225:13-55
+237        </activity>
+238        <activity
+238-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:228:9-233:20
+239            android:name="com.globalnest.scanattendee.AttendeeExpandableActivity"
+239-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:229:13-55
+240            android:configChanges="keyboardHidden|orientation|screenSize"
+240-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:231:13-74
+241            android:screenOrientation="sensorPortrait"
+241-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:230:13-55
+242            android:windowSoftInputMode="adjustResize" >
+242-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:232:13-55
+243        </activity>
+244        <activity
+244-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:234:7-238:20
+245            android:name="com.globalnest.scanattendee.DashboardAttendeesList"
+245-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:235:13-51
+246            android:configChanges="keyboardHidden|orientation|screenSize"
+246-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:237:13-74
+247            android:screenOrientation="sensorPortrait" >
+247-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:236:13-55
+248        </activity>
+249        <activity
+249-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:239:9-244:20
+250            android:name="com.globalnest.scanattendee.SelfCheckinAttendeeList"
+250-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:240:13-52
+251            android:configChanges="keyboardHidden|orientation|screenSize"
+251-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:241:13-74
+252            android:windowSoftInputMode="adjustPan" >
+252-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:242:13-52
+253        </activity>
+254        <activity
+254-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:245:9-249:20
+255            android:name="com.globalnest.scanattendee.RefundHistoryActivity"
+255-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:246:13-50
+256            android:configChanges="keyboardHidden|screenSize"
+256-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:247:13-62
+257            android:windowSoftInputMode="adjustPan|stateHidden" >
+257-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:248:13-64
+258        </activity>
+259        <activity
+259-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:250:9-255:20
+260            android:name="com.globalnest.scanattendee.AttendeeDetailActivity"
+260-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:251:13-51
+261            android:configChanges="keyboardHidden|screenSize"
+261-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:252:13-62
+262            android:screenOrientation="sensorPortrait"
+262-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:253:13-55
+263            android:windowSoftInputMode="stateHidden|adjustPan" >
+263-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:254:13-64
+264        </activity>
+265        <activity
+265-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:256:9-260:20
+266            android:name="com.globalnest.scanattendee.SelfCheckinAttendeeDetailActivity"
+266-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:257:13-62
+267            android:configChanges="keyboardHidden|screenSize"
+267-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:258:13-62
+268            android:windowSoftInputMode="stateHidden|adjustResize" >
+268-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:259:13-67
+269        </activity>
+270        <activity
+270-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:261:9-266:20
+271            android:name="com.globalnest.scanattendee.BarCodeScanActivity"
+271-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:262:13-48
+272            android:configChanges="keyboardHidden|screenSize|orientation"
+272-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:263:13-74
+273            android:screenOrientation="sensorPortrait"
+273-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:264:13-55
+274            android:windowSoftInputMode="stateHidden|adjustPan" >
+274-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:265:13-64
+275        </activity>
+276        <!--
+277        <activity
+278            android:name=".OrderSummaryActivity"
+279            android:configChanges="keyboardHidden|screenSize"
+280            android:screenOrientation="sensorPortrait"
+281            android:windowSoftInputMode="stateHidden|adjustPan" >
+282        </activity>
+283        -->
+284        <activity
+284-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:273:9-278:20
+285            android:name="com.globalnest.scanattendee.ExternalSettingsActivity"
+285-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:274:13-53
+286            android:configChanges="keyboardHidden|screenSize"
+286-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:275:13-62
+287            android:screenOrientation="sensorPortrait"
+287-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:276:13-55
+288            android:windowSoftInputMode="stateHidden|adjustPan" >
+288-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:277:13-64
+289        </activity>
+290        <activity
+290-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:279:9-287:20
+291            android:name="com.globalnest.scanattendee.ImportCSVActivity"
+291-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:280:13-46
+292            android:parentActivityName="com.globalnest.scanattendee.AttendeeListActivity"
+292-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:281:13-63
+293            android:screenOrientation="sensorPortrait"
+293-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:282:13-55
+294            android:windowSoftInputMode="stateAlwaysHidden" >
+294-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:283:13-60
+295            <meta-data
+295-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:284:13-286:57
+296                android:name="android.support.PARENT_ACTIVITY"
+296-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:285:17-63
+297                android:value=".AttendeeListActivity" />
+297-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:286:17-54
+298        </activity>
+299        <activity
+299-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:288:9-293:20
+300            android:name="com.globalnest.scanattendee.CollectOrderInfo"
+300-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:289:13-45
+301            android:configChanges="keyboardHidden|screenSize"
+301-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:290:13-62
+302            android:screenOrientation="sensorPortrait"
+302-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:291:13-55
+303            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+303-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:292:13-77
+304        </activity>
+305        <activity
+305-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:294:9-300:20
+306            android:name="com.globalnest.scanattendee.CollectOrderInfok"
+306-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:295:13-46
+307            android:configChanges="keyboardHidden|screenSize"
+307-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:296:13-62
+308            android:screenOrientation="sensorPortrait"
+308-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:297:13-55
+309            android:windowSoftInputMode="adjustResize" >
+309-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:298:13-55
+310        </activity>
+311        <activity
+311-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:301:9-310:20
+312            android:name="com.globalnest.scanattendee.SampleCSVActivity"
+312-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:302:13-46
+313            android:configChanges="orientation|keyboard"
+313-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:303:13-57
+314            android:parentActivityName="com.globalnest.scanattendee.AttendeeListActivity"
+314-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:304:13-63
+315            android:screenOrientation="sensorPortrait"
+315-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:305:13-55
+316            android:windowSoftInputMode="stateAlwaysHidden" >
+316-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:306:13-60
+317            <meta-data
+317-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:284:13-286:57
+318                android:name="android.support.PARENT_ACTIVITY"
+318-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:285:17-63
+319                android:value=".AttendeeListActivity" />
+319-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:286:17-54
+320        </activity>
+321        <activity
+321-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:311:9-315:70
+322            android:name="io.card.payment.CardIOActivity"
+322-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:312:13-58
+323            android:configChanges="keyboardHidden|orientation"
+323-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:313:13-63
+324            android:screenOrientation="sensorPortrait"
+324-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:314:13-55
+325            android:windowSoftInputMode="stateHidden|adjustResize" />
+325-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:315:13-67
+326
+327        <!--
+328            <activity
+329            android:name="com.SocketMobile.ScanAPI.SoftScanActivity"
+330            android:configChanges="keyboardHidden|orientation"
+331            android:screenOrientation="sensorPortrait"
+332            android:theme="@android:style/Theme.NoTitleBar" />
+333        -->
+334        <activity
+334-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:322:9-324:52
+335            android:name="io.card.payment.DataEntryActivity"
+335-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:323:13-61
+336            android:screenOrientation="portrait" />
+336-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:324:13-49
+337        <!-- <activity android:name="com.getcardflight.activities.ManualEntryActivity" /> -->
+338        <!--
+339        <activity
+340            android:name="com.dropbox.client2.android.AuthActivity"
+341            android:configChanges="orientation|keyboard"
+342            android:launchMode="singleTask" >
+343            <intent-filter>
+344
+345                &lt;!&ndash; Change this to be db- followed by your app key &ndash;&gt;
+346                <data android:scheme="db-g131nz3n5k0imd1" />
+347
+348                <action android:name="android.intent.action.VIEW" />
+349
+350                <category android:name="android.intent.category.BROWSABLE" />
+351                <category android:name="android.intent.category.DEFAULT" />
+352            </intent-filter>
+353        </activity>
+354        -->
+355        <activity
+355-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:341:9-346:20
+356            android:name="com.globalnest.scanattendee.TicketCartActivity"
+356-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:342:13-47
+357            android:label="@string/title_activity_ticket_cart"
+357-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:343:13-63
+358            android:screenOrientation="sensorPortrait"
+358-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:344:13-55
+359            android:windowSoftInputMode="adjustPan|stateHidden" >
+359-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:345:13-64
+360        </activity>
+361        <!--
+362        <activity
+363            android:name=".MainActivity"
+364            android:screenOrientation="portrait" >
+365        </activity>
+366        -->
+367        <activity
+367-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:351:9-354:20
+368            android:name="com.globalnest.scanattendee.ScannerPairActivity"
+368-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:352:13-48
+369            android:screenOrientation="portrait" >
+369-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:353:13-49
+370        </activity>
+371        <activity
+371-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:355:9-359:20
+372            android:name="com.paypal.android.MEP.PayPalActivity"
+372-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:356:13-65
+373            android:configChanges="keyboardHidden|orientation"
+373-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:357:13-63
+374            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+374-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:358:13-72
+375        </activity>
+376        <activity
+376-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:360:9-366:20
+377            android:name="com.globalnest.scanattendee.GlobalScanActivity"
+377-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:361:13-47
+378            android:configChanges="orientation|keyboardHidden"
+378-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:362:13-63
+379            android:label="@string/title_activity_global_scan"
+379-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:363:13-63
+380            android:screenOrientation="sensorPortrait"
+380-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:364:13-55
+381            android:windowSoftInputMode="stateHidden|adjustPan" >
+381-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:365:13-64
+382        </activity>
+383        <activity
+383-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:367:9-372:20
+384            android:name="com.globalnest.scanattendee.PGatewayKeyList"
+384-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:368:13-44
+385            android:configChanges="keyboardHidden|screenSize"
+385-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:369:13-62
+386            android:screenOrientation="sensorPortrait"
+386-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:370:13-55
+387            android:windowSoftInputMode="stateHidden|adjustPan" >
+387-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:371:13-64
+388        </activity>
+389        <activity
+389-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:373:9-380:20
+390            android:name="com.globalnest.scanattendee.PaymentSetting"
+390-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:374:13-43
+391            android:configChanges="orientation|keyboardHidden|screenSize"
+391-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:375:13-74
+392            android:label="@string/title_activity_payment_setting"
+392-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:377:13-67
+393            android:screenOrientation="sensorPortrait"
+393-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:378:13-55
+394            android:windowSoftInputMode="stateHidden|adjustPan" >
+394-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:376:13-64
+395        </activity>
+396        <activity
+396-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:381:9-387:20
+397            android:name="com.globalnest.scanattendee.CheckinHistory"
+397-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:382:13-43
+398            android:configChanges="orientation|keyboardHidden|screenSize"
+398-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:383:13-74
+399            android:label="@string/title_activity_payment_setting"
+399-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:384:13-67
+400            android:screenOrientation="sensorPortrait"
+400-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:385:13-55
+401            android:windowSoftInputMode="stateHidden|adjustPan" >
+401-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:386:13-64
+402        </activity>
+403        <activity
+403-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:388:9-391:58
+404            android:name="com.globalnest.payments.TrustCommerceWebView"
+404-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:389:13-72
+405            android:configChanges="keyboardHidden|orientation"
+405-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:390:13-63
+406            android:screenOrientation="sensorPortrait" />
+406-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:391:13-55
+407        <!-- For Authorize.net required permissions -->
+408        <!-- ** Security Activities - REQUIRED ** -->
+409        <!--
+410            <activity
+411            android:name="net.authorize.android.security.MobileMerchantAuthActivity"
+412            android:configChanges="keyboardHidden|orientation"
+413            android:screenOrientation="sensorPortrait" />
+414        -->
+415        <!--
+416            <activity
+417            android:name="net.authorize.android.security.LoginBaseActivity"
+418            android:configChanges="keyboardHidden|orientation"
+419            android:screenOrientation="sensorPortrait" />
+420        -->
+421        <!-- AIM Activity -->
+422        <!--
+423            <activity
+424            android:name="net.authorize.android.aim.AuthCaptureActivity"
+425            android:configChanges="keyboardHidden|orientation" />
+426        -->
+427        <!--
+428        <activity
+429            android:name="net.authorize.AuthorizeNetActivity"
+430            android:screenOrientation="sensorPortrait" >
+431        </activity>
+432        -->
+433        <activity
+433-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:410:9-425:20
+434            android:name="com.globalnest.scanattendee.SocialMedia"
+434-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:411:13-40
+435            android:label="@string/app_name"
+435-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:412:13-45
+436            android:theme="@style/MyCustomTheme"
+436-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:413:13-49
+437            android:windowSoftInputMode="adjustPan|stateHidden" >
+437-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:414:13-64
+438            <intent-filter>
+438-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:415:13-424:29
+439                <action android:name="android.intent.action.VIEW" />
+439-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:416:17-69
+439-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:416:25-66
+440
+441                <category android:name="android.intent.category.DEFAULT" />
+441-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:418:17-76
+441-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:418:27-73
+442                <category android:name="android.intent.category.BROWSABLE" />
+442-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:419:17-78
+442-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:419:27-75
+443
+444                <data
+444-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:421:17-423:46
+445                    android:host="t4jsample"
+445-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:422:21-45
+446                    android:scheme="oauth" />
+446-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:423:21-43
+447            </intent-filter>
+448        </activity>
+449        <activity
+449-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:426:9-429:20
+450            android:name="com.globalnest.social.GlobalFacebookActivity"
+450-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:427:13-72
+451            android:theme="@android:style/Theme.Translucent" >
+451-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:428:13-61
+452        </activity>
+453        <activity
+453-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:430:9-433:20
+454            android:name="com.globalnest.social.LinkedInActivity"
+454-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:431:13-66
+455            android:theme="@android:style/Theme.Translucent" >
+455-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:432:13-61
+456        </activity>
+457        <activity
+457-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:434:9-447:20
+458            android:name="com.globalnest.social.TwitterActivity"
+458-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:435:13-65
+459            android:label="@string/app_name"
+459-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:436:13-45
+460            android:theme="@android:style/Theme.Translucent" >
+460-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:437:13-61
+461            <intent-filter>
+461-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:415:13-424:29
+462                <action android:name="android.intent.action.VIEW" />
+462-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:416:17-69
+462-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:416:25-66
+463
+464                <category android:name="android.intent.category.DEFAULT" />
+464-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:418:17-76
+464-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:418:27-73
+465                <category android:name="android.intent.category.BROWSABLE" />
+465-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:419:17-78
+465-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:419:27-75
+466
+467                <data
+467-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:421:17-423:46
+468                    android:host="t4jsample"
+468-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:422:21-45
+469                    android:scheme="oauth" />
+469-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:423:21-43
+470            </intent-filter>
+471        </activity>
+472        <activity
+472-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:448:9-450:48
+473            android:name="com.globalnest.social.TwitterWebViewActivity"
+473-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:449:13-72
+474            android:label="@string/app_name" />
+474-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:450:13-45
+475        <activity android:name="com.globalnest.cropimage.CropImage" />
+475-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:451:9-71
+475-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:451:19-68
+476        <activity
+476-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:452:9-454:48
+477            android:name="com.facebook.FacebookActivity"
+477-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:453:13-57
+478            android:label="@string/app_name" />
+478-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:454:13-45
+479
+480        <meta-data
+480-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:456:9-458:46
+481            android:name="com.facebook.sdk.ApplicationId"
+481-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:457:13-58
+482            android:value="@string/app_id" />
+482-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:458:13-43
+483
+484        <activity
+484-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:460:9-464:20
+485            android:name="com.globalnest.scanattendee.BuyerLevelAttendeeList"
+485-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:461:13-51
+486            android:label="@string/title_activity_buyer_level_attendee_list"
+486-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:462:13-77
+487            android:screenOrientation="sensorPortrait" >
+487-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:463:13-55
+488        </activity>
+489        <activity
+489-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:465:9-469:20
+490            android:name="com.globalnest.scanattendee.PrintAttendeesListActivity"
+490-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:466:13-55
+491            android:label="@string/title_activity_buyer_level_attendee_list"
+491-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:467:13-77
+492            android:screenOrientation="sensorPortrait" >
+492-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:468:13-55
+493        </activity>
+494        <activity
+494-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:470:9-473:20
+495            android:name="com.globalnest.scanattendee.UniqueAttendeesListActivity"
+495-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:471:13-56
+496            android:screenOrientation="sensorPortrait" >
+496-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:472:13-55
+497        </activity>
+498        <activity
+498-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:474:9-477:20
+499            android:name="com.globalnest.scanattendee.MergeLevelAttendeesListActivity"
+499-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:475:13-60
+500            android:screenOrientation="sensorPortrait" >
+500-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:476:13-55
+501        </activity>
+502        <activity
+502-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:478:9-481:20
+503            android:name="com.globalnest.scanattendee.Registrationclass"
+503-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:479:13-46
+504            android:screenOrientation="sensorPortrait" >
+504-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:480:13-55
+505        </activity>
+506        <activity
+506-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:482:9-487:20
+507            android:name="com.globalnest.scanattendee.OrderDetailActivity"
+507-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:483:13-48
+508            android:label="@string/title_activity_order_detail"
+508-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:484:13-64
+509            android:screenOrientation="sensorPortrait"
+509-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:485:13-55
+510            android:windowSoftInputMode="stateHidden|adjustResize" >
+510-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:486:13-67
+511        </activity>
+512        <activity
+512-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:488:9-493:20
+513            android:name="com.globalnest.scanattendee.EventAdminCreditCard"
+513-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:489:13-49
+514            android:label="@string/app_name"
+514-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:490:13-45
+515            android:screenOrientation="sensorPortrait"
+515-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:491:13-55
+516            android:windowSoftInputMode="stateHidden|adjustPan" >
+516-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:492:13-64
+517        </activity>
+518        <activity
+518-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:494:9-498:20
+519            android:name="com.globalnest.scanattendee.LoadingEventDetailsActivity"
+519-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:495:13-56
+520            android:label="@string/title_activity_loading_event_details"
+520-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:496:13-73
+521            android:theme="@style/MyCustomTheme" >
+521-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:497:13-49
+522        </activity>
+523        <activity
+523-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:499:9-504:20
+524            android:name="com.globalnest.scanattendee.SellOrderActivity"
+524-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:500:13-73
+525            android:label="@string/app_name"
+525-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:501:13-45
+526            android:screenOrientation="sensorPortrait"
+526-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:502:13-55
+527            android:windowSoftInputMode="stateHidden|adjustResize" >
+527-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:503:13-67
+528        </activity>
+529        <activity
+529-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:505:9-509:20
+530            android:name="com.globalnest.scanattendee.SelfcheckinPaymentActivity"
+530-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:506:13-82
+531            android:label="@string/app_name"
+531-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:507:13-45
+532            android:windowSoftInputMode="stateHidden|adjustResize" >
+532-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:508:13-67
+533        </activity>
+534        <activity
+534-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:510:9-513:20
+535            android:name="com.globalnest.scanattendee.SearchAttendeeActivity"
+535-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:511:13-78
+536            android:label="@string/app_name" >
+536-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:512:13-45
+537        </activity>
+538        <activity
+538-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:514:9-518:20
+539            android:name="com.globalnest.scanattendee.ScannedTicketSettings"
+539-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:515:13-77
+540            android:label="@string/app_name"
+540-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:516:13-45
+541            android:screenOrientation="sensorPortrait" >
+541-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:517:13-55
+542        </activity>
+543        <activity
+543-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:519:9-523:20
+544            android:name="com.globalnest.scanattendee.SessionListActivity"
+544-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:520:13-75
+545            android:label="@string/app_name"
+545-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:521:13-45
+546            android:screenOrientation="sensorPortrait" >
+546-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:522:13-55
+547        </activity>
+548        <activity
+548-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:524:9-527:20
+549            android:name="com.globalnest.scanattendee.TransperantGlobalScanActivity"
+549-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:525:13-58
+550            android:theme="@style/MyTresperant" >
+550-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:526:13-48
+551        </activity>
+552        <activity
+552-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:528:9-531:20
+553            android:name="com.globalnest.scanattendee.OrderSucessPrintActivity"
+553-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:529:13-53
+554            android:theme="@style/MyTresperant" >
+554-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:530:13-48
+555        </activity>
+556        <activity
+556-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:532:9-536:20
+557            android:name="com.globalnest.scanattendee.OfflineDataSyncActivty"
+557-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:533:13-51
+558            android:screenOrientation="sensorPortrait" >
+558-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:534:13-55
+559        </activity>
+560        <activity
+560-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:539:9-542:20
+561            android:name="com.globalnest.scanattendee.AlertDialogActivity"
+561-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:540:13-48
+562            android:theme="@style/MyTresperant" >
+562-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:541:13-48
+563        </activity>
+564        <activity
+564-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:544:9-549:20
+565            android:name="com.globalnest.scanattendee.AddAttendeeActivity"
+565-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:545:13-48
+566            android:configChanges="keyboardHidden|screenSize"
+566-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:546:13-62
+567            android:label="@string/app_name"
+567-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:547:13-45
+568            android:windowSoftInputMode="stateHidden|adjustResize" >
+568-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:548:13-67
+569        </activity>
+570        <activity
+570-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:551:9-556:20
+571            android:name="com.globalnest.scanattendee.SelfcheckinTicketslistActivity"
+571-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:552:13-59
+572            android:configChanges="keyboardHidden|screenSize"
+572-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:553:13-62
+573            android:label="@string/app_name"
+573-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:554:13-45
+574            android:windowSoftInputMode="stateHidden|adjustPan" >
+574-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:555:13-64
+575        </activity>
+576        <activity
+576-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:557:9-561:20
+577            android:name="com.globalnest.scanattendee.SelfcheckinCollectOrderInfo"
+577-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:558:13-56
+578            android:configChanges="keyboardHidden|screenSize"
+578-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:559:13-62
+579            android:windowSoftInputMode="stateHidden|adjustResize" >
+579-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:560:13-67
+580        </activity>
+581        <activity
+581-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:563:9-567:20
+582            android:name="com.globalnest.scanattendee.OfflineScanActivity"
+582-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:564:13-48
+583            android:label="@string/app_name"
+583-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:565:13-45
+584            android:screenOrientation="sensorPortrait" >
+584-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:566:13-55
+585        </activity>
+586        <activity
+586-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:568:9-573:20
+587            android:name="com.globalnest.scanattendee.OfflineSyncDialogActivity"
+587-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:569:13-54
+588            android:label=""
+588-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:570:13-29
+589            android:theme="@style/MyCustomTheme"
+589-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:571:13-49
+590            android:windowSoftInputMode="adjustPan|stateHidden" >
+590-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:572:13-64
+591        </activity>
+592        <activity
+592-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:574:9-580:20
+593            android:name="com.globalnest.scanattendee.SessionAttendeeDetailActivity"
+593-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:575:13-58
+594            android:configChanges="keyboardHidden|screenSize"
+594-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:576:13-62
+595            android:screenOrientation="sensorPortrait"
+595-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:577:13-55
+596            android:windowSoftInputMode="stateHidden|adjustPan" >
+596-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:578:13-64
+597        </activity>
+598        <activity
+598-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:581:9-583:15
+599            android:name="com.globalnest.scanattendee.FilePicker"
+599-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:581:19-45
+600            android:screenOrientation="sensorPortrait" />
+600-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:582:13-55
+601
+602        <!-- For Paytm -->
+603        <activity
+603-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:587:9-590:74
+604            android:name="com.paytm.pgsdk.PaytmPGActivity"
+604-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:588:13-59
+605            android:configChanges="keyboardHidden|orientation|keyboard"
+605-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:590:13-72
+606            android:screenOrientation="portrait" />
+606-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:589:13-49
+607        <!-- citrus -->
+608        <activity
+608-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:592:9-595:74
+609            android:name="com.globalnest.scanattendee.PrintersListActivity"
+609-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:593:13-76
+610            android:configChanges="keyboardHidden|orientation|keyboard"
+610-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:595:13-72
+611            android:screenOrientation="portrait" />
+611-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:594:13-49
+612        <activity
+612-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:596:9-598:52
+613            android:name="com.globalnest.printer.PrintDialogActivity"
+613-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:597:13-70
+614            android:screenOrientation="portrait" />
+614-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:598:13-49
+615        <!--
+616            <activity
+617            android:name="com.globalnest.scanattendee.citrus.MainActivity"
+618            android:screenOrientation="portrait" />
+619        -->
+620        <!--
+621       <activity
+622           android:name=".DashboardActivity"
+623           android:label="@string/app_name"
+624           android:screenOrientation="sensorPortrait" >
+625       </activity>
+626        -->
+627        <!-- Background Service -->
+628
+629        <service
+629-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:609:9-611:40
+630            android:name="com.globalnest.BackgroundReciver.DownloadService"
+630-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:610:13-76
+631            android:exported="false" />
+631-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:611:13-37
+632        <service
+632-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:612:9-614:40
+633            android:name="com.globalnest.appsessions.RevokeSessionsService"
+633-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:613:13-76
+634            android:exported="false" />
+634-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:614:13-37
+635
+636        <receiver
+636-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:616:9-631:20
+637            android:name="com.globalnest.scanattendee.SocketBroadCastReciever"
+637-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:617:13-79
+638            android:enabled="true"
+638-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:618:13-35
+639            android:exported="true" >
+639-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:619:13-36
+640            <intent-filter>
+640-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:620:13-630:29
+641                <action android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyScannerArrival" />
+641-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:621:17-131
+641-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:621:25-128
+642                <action android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.DecodedData" />
+642-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:622:17-122
+642-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:622:25-119
+643                <action android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyErrorMessage" />
+643-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:623:17-129
+643-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:623:25-126
+644                <action android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyScannerRemoval" />
+644-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:624:17-131
+644-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:624:25-128
+645                <action android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.NotifyDataArrival" />
+645-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:625:17-128
+645-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:625:25-125
+646                <action android:name="com.globalnest.scanattendee.socketmobile.ScannerSettingsApplication.GetBatteryLevelComplete" />
+646-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:626:17-134
+646-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:626:25-131
+647                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+647-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:627:17-89
+647-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:627:25-86
+648
+649                <category android:name="com.globalnest.scanattendee" />
+649-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:629:17-72
+649-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:629:27-69
+650            </intent-filter>
+651        </receiver>
+652        <receiver android:name="com.globalnest.scanattendee.OfflineSyncBroadCast" >
+652-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:632:9-636:20
+652-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:632:19-82
+653            <intent-filter>
+653-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:633:13-635:29
+654                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+654-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:634:17-79
+654-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:634:25-76
+655            </intent-filter>
+656        </receiver>
+657
+658        <meta-data
+658-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:637:9-639:72
+659            android:name="io.fabric.ApiKey"
+659-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:638:13-44
+660            android:value="d8676b8c53ed81722aa7504617f5ffe2048127a9" />
+660-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:639:13-69
+661
+662        <uses-library
+662-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:640:9-642:40
+663            android:name="org.apache.http.legacy"
+663-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:641:13-50
+664            android:required="false" />
+664-->D:\ScanAttendee-ScanAttendee-Main-Branch\ScanAttendee-ScanAttendee-Main-Branch\scanAttendeeTablet\src\main\AndroidManifest.xml:642:13-37
+665        <!--
+666        <meta-data
+667            android:name="com.socketmobile.capture.APP_KEY"
+668            android:value="MC0CFQCOFDCSAL8t/nx7Zg8370fQOd+lEgIUPiSWKeKG1Q9MdEEnUvSwv+6LeHE="/>
+669        <meta-data
+670            android:name="com.socketmobile.capture.DEVELOPER_ID"
+671            android:value="a437d36b-11bf-4027-91de-aea4e274412c"/>
+672        -->
+673        <activity
+673-->[com.karumi:dexter:5.0.0] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\eb15a19f53ed143bd38cd5f40671c03a\dexter-5.0.0\AndroidManifest.xml:27:9-29:72
+674            android:name="com.karumi.dexter.DexterActivity"
+674-->[com.karumi:dexter:5.0.0] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\eb15a19f53ed143bd38cd5f40671c03a\dexter-5.0.0\AndroidManifest.xml:28:13-60
+675            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+675-->[com.karumi:dexter:5.0.0] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\eb15a19f53ed143bd38cd5f40671c03a\dexter-5.0.0\AndroidManifest.xml:29:13-69
+676
+677        <meta-data
+677-->[com.google.android.gms:play-services-basement:8.4.0] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\0e6d931ff3b98b2a59cfd448ecefc22e\play-services-basement-8.4.0\AndroidManifest.xml:21:9-23:69
+678            android:name="com.google.android.gms.version"
+678-->[com.google.android.gms:play-services-basement:8.4.0] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\0e6d931ff3b98b2a59cfd448ecefc22e\play-services-basement-8.4.0\AndroidManifest.xml:22:13-58
+679            android:value="@integer/google_play_services_version" />
+679-->[com.google.android.gms:play-services-basement:8.4.0] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\0e6d931ff3b98b2a59cfd448ecefc22e\play-services-basement-8.4.0\AndroidManifest.xml:23:13-66
+680
+681        <provider
+681-->[com.crashlytics.sdk.android:crashlytics:2.8.0] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\66afab282ecfbc2c7f55b5c51d532c8e\crashlytics-2.8.0\AndroidManifest.xml:12:9-16:39
+682            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+682-->[com.crashlytics.sdk.android:crashlytics:2.8.0] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\66afab282ecfbc2c7f55b5c51d532c8e\crashlytics-2.8.0\AndroidManifest.xml:13:13-75
+683            android:authorities="com.globalnest.scanattendee.crashlyticsinitprovider"
+683-->[com.crashlytics.sdk.android:crashlytics:2.8.0] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\66afab282ecfbc2c7f55b5c51d532c8e\crashlytics-2.8.0\AndroidManifest.xml:14:13-75
+684            android:exported="false"
+684-->[com.crashlytics.sdk.android:crashlytics:2.8.0] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\66afab282ecfbc2c7f55b5c51d532c8e\crashlytics-2.8.0\AndroidManifest.xml:15:13-37
+685            android:initOrder="100" />
+685-->[com.crashlytics.sdk.android:crashlytics:2.8.0] C:\Users\91905\.gradle\caches\transforms-2\files-2.1\66afab282ecfbc2c7f55b5c51d532c8e\crashlytics-2.8.0\AndroidManifest.xml:16:13-36
+686    </application>
+687
+688</manifest>

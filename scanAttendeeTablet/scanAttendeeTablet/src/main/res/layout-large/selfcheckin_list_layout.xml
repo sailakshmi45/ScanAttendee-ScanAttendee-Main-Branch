@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/selfcheckinattendeebackgroud"
+    >
+
+    <LinearLayout
+        android:id="@+id/full_selfcheckinlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/animation_selcheckinlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            >
+            <LinearLayout
+                android:id="@+id/lay_topeventlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/selfcheckin_eventlogo"
+                    android:layout_width="400dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="6dp"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/selfcheckin_eventname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/setting_bg"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <LinearLayout
+                android:id="@+id/selfcheckinsearchlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/lay_sideeventlogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/selfcheckin_eventlogoside"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp" />
+
+                   <!-- <TextView
+                        android:id="@+id/selfcheckin_eventnameside"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Eventname"
+                        android:textColor="@color/setting_bg"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="If you already registered? Please search to print badge!"
+                        android:textColor="@color/setting_bg"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:id="@+id/hint_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/bubble_shape"
+                        android:gravity="right"
+                        android:paddingBottom="5dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:minLines="2"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="If you don't find your record, Please click on search for latest records!"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/selfcheckineditsearchrecord"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_selfcheckin_searchview"
+                            android:drawableLeft="@drawable/search_small"
+                            android:drawableRight="@drawable/searchclear"
+                            android:drawablePadding="10dp"
+                            android:hint="First Name, Last Name, Company, Email, Item Name, Order ID and Ticket No."
+                            android:imeActionLabel="Search"
+                            android:imeOptions="actionSearch"
+                            android:padding="6dp"
+                            android:paddingLeft="5dp"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:textSize="18dp"
+                            android:inputType="textNoSuggestions"
+                            android:visibility="visible" />
+
+                        //android:inputType="textCapSentences"
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btn_search"
+                                android:layout_width="fill_parent"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center|right"
+                                android:layout_weight="6"
+                                android:background="@drawable/rounded_icon_colorbutton"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="Search"
+                                android:textColor="@color/white"
+                                android:textColorHighlight="@color/green_text_color_selector"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="2dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/btn_scanning_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Got Order QR code?"
+                                android:textColor="@color/setting_bg"
+                                android:textSize="16dp" />
+
+                            <Button
+                                android:id="@+id/btn_scanning"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_icon_colorbutton"
+                                android:padding="8dp"
+                                android:text="Scan Now"
+                                android:textColor="@color/white"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/btn_register_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Not registered?"
+                                android:textColor="@color/setting_bg"
+                                android:textSize="16dp" />
+
+                            <Button
+                                android:id="@+id/btn_register"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_icon_colorbutton"
+                                android:padding="8dp"
+                                android:text="Register Now"
+                                android:textColor="@color/white"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_noattendee"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="No Attendee Found!"
+                android:textColor="@color/setting_bg"
+                android:textSize="14dp"
+                android:typeface="serif"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/loadorders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    style="?android:attr/progressBarStyleLargeInverse"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip" />
+
+                <TextView
+                    android:id="@+id/txtloadmsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5.0dip"
+                    android:text="Loading, Attendees..."
+                    android:textColor="@color/setting_bg1"
+                    android:textSize="@dimen/font_normal" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/attendee_selflistView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:alwaysDrawnWithCache="false"
+                android:divider="@null"
+                android:scrollingCache="false"
+                android:smoothScrollbar="true"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+#Tue Jun 01 01:07:34 IST 2021
+base.0=D\:\\ScanAttendee-ScanAttendee-Main-Branch\\ScanAttendee-ScanAttendee-Main-Branch\\scanAttendeeTablet\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=D\:\\ScanAttendee-ScanAttendee-Main-Branch\\ScanAttendee-ScanAttendee-Main-Branch\\scanAttendeeTablet\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex

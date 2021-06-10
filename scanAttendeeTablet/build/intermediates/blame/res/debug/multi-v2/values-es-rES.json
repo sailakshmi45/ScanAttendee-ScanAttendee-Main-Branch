@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\ScanAttendee-ScanAttendee-Main-Branch\\ScanAttendee-ScanAttendee-Main-Branch\\scanAttendeeTablet\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rES\\values-es-rES.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\91905\\.gradle\\caches\\transforms-2\\files-2.1\\7927930fada42b0bc09fad3fd12f4958\\facebook-android-sdk-4.0.0\\res\\values-es-rES\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "185",
+                        "endColumns": "61",
+                        "endOffsets": "242"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "61",
+                        "endOffsets": "112"
+                    }
+                }
+            ]
+        }
+    ]
+}
